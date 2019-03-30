@@ -1,8 +1,8 @@
 {
-  "homepage": "https://yourusername.github.io/my-clicky-game",
   "name": "myclickygame",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://abagwell90.github.io/my-clicky-game",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
@@ -11,12 +11,12 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeply": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
