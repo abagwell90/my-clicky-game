@@ -31,3 +31,11 @@
     transform: rotate(360deg);
   }
 }
+
+footer {
+  background-color: #282c34;
+  min-height: 130px;
+  align-items: center;
+  justify-content: center;
+  color: turquoise;
+}

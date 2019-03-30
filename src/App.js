@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './images/logo1-01.png';
 import './App.css';
+import ImageSwitch from './ImageSwitch';
 
 class App extends Component {
   render() {
@@ -8,18 +9,23 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <br></br>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Don't click the same image <br></br>twice and see how high <br></br>your score can go (score 12 and win!)
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          
         </header>
+        <ImageSwitch>
+
+        </ImageSwitch>
+        <br></br>
+
+        <footer>
+          <br></br>
+          <p> Andrew J Bagwell</p><br></br>
+        <a href="https://icons8.com/icon/48250/source-code">Source Code icon by Icons8</a> <br></br>
+        </footer>
+        <br></br>
       </div>
     );
   }
